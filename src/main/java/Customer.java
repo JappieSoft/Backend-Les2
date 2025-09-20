@@ -1,14 +1,14 @@
 public class Customer {
     String name;
-    SuperMarket superMarket;
+    String superMarket;
     int amount;
 
-    public Customer() {
-        name = "John Doe";
+    public String Customer() {
+        return name = "John Doe";
     }
 
-    public void goToSuperMarket (SuperMarket superMarket){
-        this.superMarket = superMarket;
+    public String goToSuperMarket (){
+        return superMarket = "Joppie's Hokkie";
     }
 
 

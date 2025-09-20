@@ -9,7 +9,7 @@ public class SuperMarket {
 
     }
 
-    public static void buyItem(Product product, int orderAmount) {
+    public void buyItem(Product product, int orderAmount) {
         String itemName = product.name;
         double itemPrice = product.price;
         int itemStock = product.amount;
