@@ -1,29 +1,30 @@
+import java.util.Objects;
+
 public class Customer {
-    String name;
-    SuperMarket superMarket;
+    public String customerName;
+    public SuperMarket superMarket;
     int amount;
 
-    public String Customer() {
-        return name = "John Doe";
+    public void Customer (String customerName) {
+        this.customerName = customerName;
     }
 
-    public String goToSuperMarket (){
-        return "Joppie's Hokkie";
+    public void goToSuperMarket (SuperMarket superMarket){
+        this.superMarket = superMarket;
     }
 
 
     public void buyItem(String productName, int amount) {
-
-        if (productName == "bread") {
+        if (Objects.equals(productName, superMarket.bread.name)) {
             superMarket.buyBread(amount);
-        } else if (productName == "fruit") {
+        } else if (Objects.equals(productName, superMarket.fruit.name)) {
             superMarket.buyFruit(amount);
-        } else if (productName == "cheese") {
+        } else if (Objects.equals(productName, superMarket.cheese.name)) {
             superMarket.buyCheese(amount);
-        } else if (productName == "toiletPaper") {
+        } else if (Objects.equals(productName, superMarket.toiletPaper.name)) {
             superMarket.buyToiletPaper(amount);
         } else {
-        System.out.println("Product NOT Found!");
+        System.out.println("Product niet gevonden in de Winkel!");
         }
     }
 
