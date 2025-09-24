@@ -22,8 +22,8 @@ public class Main {
         int amount = scanner.nextInt();
         scanner.nextLine();
 
-        Customer.goToSuperMarket();
-        Customer.buyItem(productName, amount);
+        customer.goToSuperMarket();
+        customer.buyItem(productName, amount);
     }
 
 

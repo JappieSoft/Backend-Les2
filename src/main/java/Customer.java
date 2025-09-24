@@ -1,6 +1,6 @@
 public class Customer {
     String name;
-    String superMarket;
+    SuperMarket superMarket;
     int amount;
 
     public String Customer() {
@@ -8,11 +8,11 @@ public class Customer {
     }
 
     public String goToSuperMarket (){
-        return superMarket = "Joppie's Hokkie";
+        return "Joppie's Hokkie";
     }
 
 
-    public static void buyItem(String productName, int amount) {
+    public void buyItem(String productName, int amount) {
 
         if (productName == "bread") {
             superMarket.buyBread(amount);
