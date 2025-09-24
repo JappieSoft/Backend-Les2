@@ -21,7 +21,7 @@ public class Customer {
             superMarket.buyFruit(amount);
         } else if (Objects.equals(productName, superMarket.cheese.name)) {
             superMarket.buyCheese(amount);
-        } else if (Objects.equals(productName, superMarket.toiletPaper.name)) {
+        } else if (Objects.equals(productName, superMarket.toiletPaper.name) || Objects.equals(productName, "toiletpapier")) {
             superMarket.buyToiletPaper(amount);
         } else {
         System.out.println("Product niet gevonden in de Winkel!");
